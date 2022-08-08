@@ -144,4 +144,4 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 ### Authors
 
 * [Anas ferchichi](https://github.com/FerchichiXIII)
-*[Khawla daouay](https://github.com/jaafarfares)
+* [Khawla daouay](https://github.com/jaafarfares)
