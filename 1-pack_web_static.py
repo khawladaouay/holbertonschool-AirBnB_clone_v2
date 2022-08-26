@@ -8,6 +8,7 @@ from os.path import isdir, exists, getsize
 
 
 def do_pack():
+    """test"""
     date = datetime.now().strftime("%y%m%d%H%M%S")
     if isdir("versions") is False:
         local("mkdir versions")
