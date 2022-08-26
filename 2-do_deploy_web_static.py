@@ -9,7 +9,7 @@ def do_deploy(archive_path):
     """Prototype: def do_deploy(archive_path)"""
     if exists(archive_path):
 
-        file_name= archive_path.split("/")[-1]
+        file_name = archive_path.split("/")[-1]
         remove = file_name.split(".")[0]
         path = "/data/web_static/releases/"
 
