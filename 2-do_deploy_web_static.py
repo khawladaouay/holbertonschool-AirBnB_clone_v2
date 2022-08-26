@@ -6,6 +6,7 @@ env.hosts = ['54.91.126.79', '18.208.141.223']
 
 
 def do_deploy(archive_path):
+    """deploy func"""
     if exists(archive_path):
         file_name = archive_path.split("/")[-1]
         no_ext = file_name.split(".")[0]
@@ -19,5 +20,4 @@ def do_deploy(archive_path):
         run(" rm -rf /data/web_static/current")
         run("ln -s {}{}/ /data/web_static/current".format(path, no_ext))
         return True
-
     return False
