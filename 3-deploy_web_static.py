@@ -22,7 +22,7 @@ def do_pack():
 
 
 def do_deploy(archive_path):
-    """Prototype: def do_deploy(archive_path)"""
+    """do_deploy"""
     if exists(archive_path):
 
         file_name = archive_path.split("/")[-1]
@@ -53,6 +53,7 @@ def do_deploy(archive_path):
 
 
 def deploy():
+    """deploy"""
     archive_path = do_pack()
     if archive_path is None:
         return False
