@@ -13,11 +13,13 @@ def hbnb():
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb_():
+    """Display HBNB"""
     return "HBNB"
 
 
 @app.route('/c/<text>', strict_slashes=False)
 def c(text):
+    """Display text"""
     text = text.replace('_', ' ')
     return f"c {text}"
 
